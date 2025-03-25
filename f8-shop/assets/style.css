@@ -11,7 +11,7 @@
 .header__navbar-list {
     list-style: none;
     padding-left: 0;
-    margin-top: 5px;
+    margin-top: 5px 0 0 0;
 }
 
 .header__navbar-item {
@@ -91,6 +91,10 @@
     }
 }
 
+.header__navbar-item--has-notify:hover .header__notify {
+    display: block;
+}
+
 .header__navbar-title--no-poiter {
     cursor: text;
     color: var(--white-color);
@@ -159,7 +163,7 @@
     cursor: default;
     /* 100% 0 cũng đc */
     transform-origin: calc(100% - 20px) 0;
-    animation: headerNotifyGrowth ease-in 0.25s;
+    animation: headerNotifyGrowth ease-in 0.2s;
     display: none;
 }
 
@@ -250,4 +254,9 @@
     margin: auto;
     font-size: 1.4rem;
     font-weight: 500;
+}
+
+/* Header with search */
+.header-witdh-search {
+    height: var(--header-witd-search-height);
 }
