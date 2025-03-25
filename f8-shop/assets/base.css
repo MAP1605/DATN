@@ -1,7 +1,13 @@
 :root {
+    --primary-color: #EE4D2D;
+    /* --primary-color-rgba: rgb(238, 75, 43); */
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+
+    --header-height: 120px;
+    --navbar-height: 37px;
+    --header-witd-search-height: calc(var(--header-height) - var(--navbar-height));
 }
 
 * {
@@ -44,4 +50,15 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
