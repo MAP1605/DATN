@@ -565,6 +565,15 @@
     margin-top: 10px;
     border-radius: 3px;
     /* overflow: hidden; */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    transition: transform liner 0.1s;
+    will-change: transform;
+}
+
+.home-product-item:hover {
+    transform: translateY(-2px);
+    cursor: pointer;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
 
 }
 
@@ -665,6 +674,7 @@
     padding-bottom: 10px;
     color: #595959;
     font-size: 1.2rem;
+
 }
 
 .home-product-item__brand {
